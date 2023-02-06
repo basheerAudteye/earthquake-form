@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+<body>
+    <!-- <h1>Dashboard</h1>
+    <p>Name: {{ form_data.name }}</p>
+    <p>Email: {{ form_data.email }}</p>
+    <p>Message: {{ form_data.message }}</p> -->
+
+    <table>
+        <tr>
+            <th>Name</th>
+            <td>{{ form_data.name }}</td>
+        </tr>
+        <tr>
+            <th>Email</th>
+            <td>{{ form_data.email }}</td>
+        </tr>
+        <tr>
+            <th>Message</th>
+            <td>{{ form_data.message }}</td>
+        </tr>
+    </table>
+    
+</body>
+</html>
